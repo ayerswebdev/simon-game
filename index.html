@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Simon Game</title>
+
+    <!--Import libraries and frameworks-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--Import custom fonts-->
+    <script src="https://use.fontawesome.com/589ca5c72c.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Righteous|Orbitron" rel="stylesheet">
+
+    <!--Import custom CSS and JavaScript files-->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+    
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div id="game-board">
+        <button class="color-btn" id="green"></button>
+        <button class="color-btn" id="red"></button>
+        <button class="color-btn" id="yellow"></button>
+        <button class="color-btn" id="blue"></button>
+
+        <div class="text-center" id="control-panel">
+          <h1 id="simon">Simon</h2>
+            <div id = "level-box">
+              <p id = "level-text"></p>
+            </div>
+            <div id = "control-btns">
+              <div id = "start">
+                <button id = "start-btn"></button>
+                <p id = "start-text">Start</p>
+              </div>
+              <div id = "strict">
+                <button id = "strict-btn"></button>
+                <p id = "strict-text">Strict</p>
+              </div>
+              <div id = "reset">
+                <button id = "reset-btn"></button>
+                <p id = "reset-text">Reset
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

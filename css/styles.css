@@ -1,0 +1,149 @@
+body {
+  background-color: #E0E0E0;
+  font-family: "Righteous", cursive;
+}
+
+.container-fluid {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#game-board {
+  background-color: #131313;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  z-index: 1;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.color-btn {
+  width: 280px;
+  height: 280px;
+  border: 0px;
+  z-index: 3;
+  opacity: 0.75;
+}
+
+.lit {
+  opacity: 1;
+}
+
+button:hover, button:active, button:focus {
+  outline: 0 !important;
+  box-shadow: 0 !important;
+
+}
+
+#green {
+  background-color: #32ff32;
+  border-top-left-radius: 100%;
+  border-bottom-right-radius: 10px;
+  margin: 13px 5px 5px 0px;
+}
+
+#red {
+  background-color: #ff3232;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 10px;
+  margin: 13px 0px 5px 5px;
+}
+
+#yellow {
+  background-color: #ffff32;
+  border-bottom-left-radius: 100%;
+  border-top-right-radius: 10px;
+  margin: 5px 5px 0px 5px;
+}
+
+#blue {
+  background-color: #3232ff;
+  border-bottom-right-radius: 100%;
+  border-top-left-radius: 10px;
+  margin: 5px 5px 5px 5px;
+}
+
+#control-panel {
+  background-color: #a6a6a6;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  position: relative;
+  bottom: 410px;
+  border: 10px solid black;
+  z-index: 5;
+}
+
+#simon {
+  margin-top: 10px;
+  font-family: "righteous", cursive;
+}
+
+#level-box {
+  width: 40%;
+  height: 60px;
+  background-color: black;
+  border-radius: 3px;
+  margin-left: 30%;
+  color: #ff3232;
+  font-size: 54px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Orbitron", sans-serif;
+}
+
+#level-text {
+  margin-top: 12px;
+}
+
+#control-btns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 8px;
+}
+
+#start-btn {
+  background-color: #ff3232;
+  width: 25px;
+  height: 25px;
+  border: 0;
+  box-shadow: 0px 2px #490b0b;
+  border-radius: 50%;
+  position: relative;
+}
+
+#strict-btn {
+  background-color: #ffff32;
+  width: 25px;
+  height: 25px;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0px 2px #7f6b00;
+  position: relative;
+}
+
+#reset-btn {
+  background-color: #32ff32;
+  width: 25px;
+  height: 25px;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0px 2px #004000;
+  position: relative;
+}
+
+#start-btn:active, #strict-btn:active, #reset-btn:active {
+  bottom: -2px !important;
+  box-shadow: 0px 0px;
+}
